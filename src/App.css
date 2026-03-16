@@ -41,14 +41,26 @@ main {
 }
 
 .app-header {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app-logo {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 243, 255, 0.5));
 }
 
 .app-header h1 {
@@ -155,6 +167,14 @@ main {
     max-width: 800px;
     position: relative;
     clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+}
+
+.login-logo {
+    height: 220px;
+    width: auto;
+    margin: 0 auto 1.5rem;
+    filter: drop-shadow(0 0 30px rgba(0, 243, 255, 0.4));
+    display: block;
 }
 
 .menu::-webkit-scrollbar {
@@ -370,6 +390,7 @@ input[type="file"] {
     font-size: 6rem;
     margin: 1rem 0;
     background: linear-gradient(to bottom, #fff, #888);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
@@ -552,6 +573,15 @@ td:last-child {
 .profile-dashboard {
     max-width: 800px;
     width: 100%;
+    padding-bottom: 7rem; /* Significantly increased padding */
+}
+
+.profile-actions {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
 }
 
 .profile-header {

@@ -1,4 +1,4 @@
-package com.guitartabhero.app;
+package com.tabrush.app;
 
 import com.getcapacitor.BridgeActivity;
 

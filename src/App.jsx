@@ -12,6 +12,7 @@ import Login from './components/Login';
 import Profile from './components/Profile';
 import { DEMO_SONGS } from './data/songs';
 import { auth } from './firebase';
+import logo from './assets/LOGO_TABRUSH-removebg.png';
 
 function App() {
     const [gameState, setGameState] = useState('menu'); // menu, playing, results
@@ -308,7 +309,10 @@ function App() {
     return (
         <div className="app-container">
             <header className="app-header">
-                <h1>Guitar Tab Hero</h1>
+                <div className="logo-container">
+                    <img src={logo} alt="TabRush Logo" className="app-logo" />
+                    <h1>TabRush</h1>
+                </div>
                 {user && (
                     <div className="user-info" onClick={() => setShowProfileMenu(!showProfileMenu)}>
                         <img src={user.photoURL} alt="User" className="user-avatar" />

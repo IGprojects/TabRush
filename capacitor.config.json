@@ -1,5 +1,5 @@
 {
-  "appId": "com.guitartabhero.app",
-  "appName": "Guitar Tab Hero",
+  "appId": "com.tabrush.app",
+  "appName": "TabRush",
   "webDir": "dist"
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { signInWithPopup } from "firebase/auth";
 import { auth, googleProvider } from '../firebase';
+import logo from '../assets/LOGO_TABRUSH-removebg.png';
 
 const Login = ({ onLogin }) => {
 
@@ -15,10 +16,10 @@ const Login = ({ onLogin }) => {
     };
 
     return (
-        <div className="menu">
-            <h2>Welcome to Guitar Tab Hero</h2>
-            <p>Sign in to save your progress and compete!</p>
-
+        <div className="menu landing-screen">
+            <img src={logo} alt="TabRush Logo" className="login-logo" />
+            <h2>Welcome</h2>
+            
             <div className="login-actions">
                 <button className="btn-primary" onClick={handleGoogleLogin}>
                     Sign in with Google

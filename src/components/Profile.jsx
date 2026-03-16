@@ -74,7 +74,9 @@ const Profile = ({ user, history, onBack, onLogout }) => {
                 </div>
             </div>
 
-            <button className="btn-primary" onClick={onBack}>Back to Menu</button>
+            <div className="profile-actions">
+                <button className="btn-primary" onClick={onBack}>Back to Menu</button>
+            </div>
         </div>
     );
 };
